@@ -86,21 +86,18 @@
     color: white;
 }
 
-.st{
-    background: #201c29;
-    color: #a1a1af;
-    padding: 2rem;
-    box-shadow: 0 0 5rem #100e17;
-    position: relative;
-    z-index: 3;
-    border-radius: 1rem;
-    max-width: 600px;
-    position: absolute;
-    bottom: calc(-4rem - 132px);
-    left: 0;
-    display: grid;
-    grid-template-columns: 1fr 110px;
-    grid-gap: 1rem;
-    -webkit-box-align: center;
+
+
+
+
+@media screen and (max-width: 800px) {
+    .projects{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
     align-items: center;
-}
+    justify-content: space-evenly;
+    
+    }
+  }
