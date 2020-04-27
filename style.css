@@ -1,0 +1,114 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.banner{
+    padding-left: 15%;
+    padding-right: 5%;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-image: url('bg.jpg');
+    
+    background-attachment: fixed;
+}
+.title{
+    margin-top: -10%;
+    font-size: 42px;
+    font-weight: 800;
+    color: rgb(47, 42, 42);
+    font-family: 'Samarkan';
+}
+.tag{
+    color: rgb(220, 214, 133);
+}
+.click{
+    display: block;
+    width: 150px;
+    color: rgb(47, 42, 42);
+    padding: 20px;
+    border: 2px black solid;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.click:hover{
+    
+    /* background-image: url('button.png');
+    background-size: auto;
+    
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: black;
+    border: 2px  transparent solid;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+.projects{
+    
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.project{
+    width: 300px;
+    height: 300px;
+    background-color:  #201c29;
+    box-shadow: 0 0 4rem #100e17;
+    border-radius: 1rem;
+    padding: 8px;
+}
+.name{
+    padding: 8px;
+    color: whitesmoke;
+    font-size: 24px;
+    text-align: center;
+}
+.tagline{
+    margin-top: 16px;
+    padding: 8px;
+    color: white;
+}
+
+.st{
+    background: #201c29;
+    color: #a1a1af;
+    padding: 2rem;
+    box-shadow: 0 0 5rem #100e17;
+    position: relative;
+    z-index: 3;
+    border-radius: 1rem;
+    max-width: 600px;
+    position: absolute;
+    bottom: calc(-4rem - 132px);
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+}
